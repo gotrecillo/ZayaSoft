@@ -9,4 +9,8 @@ public class Modulo2 {
 		return x - y;
 	}
 	
+	public double multiplicacion(double x, double y){
+		return x * y;
+	}
+	
 }
