@@ -13,4 +13,8 @@ public class Modulo2 {
 		return x * y;
 	}
 	
+	public double division(double x, double y){
+		return x / y;
+	}
+	
 }
