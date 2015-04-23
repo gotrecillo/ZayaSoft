@@ -1,19 +1,19 @@
 
 public class Modulo2 {
 	
-	public double suma(double x, double y){
+	public static double suma(double x, double y){
 		return x + y;
 	}
 	
-	public double resta(double x, double y){
+	public static double resta(double x, double y){
 		return x - y;
 	}
 	
-	public double multiplicacion(double x, double y){
+	public static double multiplicacion(double x, double y){
 		return x * y;
 	}
 	
-	public double division(double x, double y){
+	public static double division(double x, double y){
 		return x / y;
 	}
 	
