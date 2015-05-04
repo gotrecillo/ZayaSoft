@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main (String[] args){
-		String options = "¿Qué operación quieres realizar?\n1 - Suma\n2 - Resta\n3 - Multiplicación\n4 - División\n0 - Salir del programa ";
-		String wrongOption = "Opción incorrecta";
+		String options = "Â¿QuÃ© operaciÃ³n quieres realizar?\n1 - Suma\n2 - Resta\n3 - MultiplicaciÃ³n\n4 - DivisiÃ³n\n0 - Salir del programa ";
+		String wrongOption = "OpciÃ³n incorrecta";
 		String wrongDivision = "No se puede dividir entre cero cara chancla";
-		String oneNumber = "Introduce un número";
-		String anotherNumber = "Introduce otro número";
+		String oneNumber = "Introduce un nÃºmero";
+		String anotherNumber = "Introduce otro nÃºmero";
 		String result = "El resultado es: ";
 		String thanks = "Muchas gracias por usar la cacalculadora";
 		

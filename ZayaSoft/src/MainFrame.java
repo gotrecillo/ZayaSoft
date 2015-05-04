@@ -7,7 +7,11 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/**
+ * 
+ * @author gotre
+ * @version 2.0
+ */
 
 public class MainFrame {
 
@@ -181,7 +185,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				try{
 					if(op1!=0)
-	                     op1=op1+Double.parseDouble(display.getText());
+						 op1=Modulo2.suma(op1, Double.parseDouble(display.getText()));
 	                 else
 	                     op1=Double.parseDouble(display.getText());
 	                 operacion="suma";
@@ -199,7 +203,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				try{
                     if(op1!=0)
-                        op1=op1-Double.parseDouble(display.getText());
+                    	op1=Modulo2.resta(op1, Double.parseDouble(display.getText()));
                     else
                         op1=Double.parseDouble(display.getText());
                     operacion="resta";
@@ -217,7 +221,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				try{
                     if(op1!=0)
-                        op1=op1*Double.parseDouble(display.getText());
+                        op1=Modulo2.multiplicacion(op1, Double.parseDouble(display.getText()));
                     else
                         op1=Double.parseDouble(display.getText());
                     operacion="multiplicacion";
@@ -235,7 +239,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				 try{
 	                    if(op1!=0)
-	                        op1=op1/Double.parseDouble(display.getText());
+	                    	op1=Modulo2.division(op1, Double.parseDouble(display.getText()));
 	                    else
 	                        op1=Double.parseDouble(display.getText());
 	                    operacion="division";
@@ -281,22 +285,22 @@ public class MainFrame {
 	                    op2=Double.parseDouble(display.getText());
 	                }catch(Exception err){}
 	                if(operacion.equals("suma")){
-	                    double res=op1+op2;
+	                    double res=Modulo2.suma(op1, op2);
 	                    display.setText(String.valueOf(res));
 	                    op1=op2=0;
 	                    operacion="";
 	                }else if(operacion.equals("resta")){
-	                    double res=op1-op2;
+	                    double res=Modulo2.resta(op1, op2);
 	                    display.setText(String.valueOf(res));
 	                    op1=op2=0;
 	                    operacion="";
 	                }else if(operacion.equals("multiplicacion")){
-	                    double res=op1*op2;
+	                    double res=Modulo2.multiplicacion(op1, op2);
 	                    display.setText(String.valueOf(res));
 	                    op1=op2=0;
 	                    operacion="";
 	                }else if(operacion.equals("division")){
-	                    double res=op1/op2;
+	                    double res=Modulo2.division(op1, op2);
 	                    display.setText(String.valueOf(res));
 	                    op1=op2=0;
 	                    operacion="";
